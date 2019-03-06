@@ -1,0 +1,33 @@
+<!-- <div class="row c-mb10">
+  <div class="col-md-2 text-right">
+    <label class="col-form-label"><i class="red  c-mr5">*</i>监控周期：</label>
+  </div>
+  <div class="c-ml15 col-md-1" [formGroup]="addForm">
+    <select class="form-control" (change)="change()" [(ngModel)]="cronType" formControlName="cronType">
+      <option value="week">每周</option>
+      <option value="month">每月</option>
+    </select>
+  </div>
+  <div *ngIf="cronType =='month'" class="col-md-1" [formGroup]="addForm">
+    <select class="form-control" (change)="change()" formControlName="day"
+      [(ngModel)]="day">
+      <option *ngFor="let data of dayValues;" [value]="data">{{data}}日</option>
+    </select>
+  </div>
+  <div *ngIf="cronType == 'week'"  class="col-md-1" [formGroup]="addForm">
+    <select class="form-control" (change)="change()" formControlName="weekday"
+      [(ngModel)]="weekday">
+      <option *ngFor="let data of weekdayValues;" [value]="data.value">{{data.name}}</option>
+    </select>
+  </div>
+  <div class="col-md-1" [formGroup]="addForm">
+    <select class="form-control" (change)="change()" formControlName="hour" [(ngModel)]="hour">
+      <option *ngFor="let data of hourValues;" [value]="data">{{data}}时</option>
+    </select>
+  </div>
+  <div class="col-md-1" [formGroup]="addForm">
+    <select class="form-control" (change)="change()" formControlName="minute" [(ngModel)]="minute">
+      <option *ngFor="let data of minuteValues;" [value]="data">{{data}}分</option>
+    </select>
+  </div>
+</div> -->

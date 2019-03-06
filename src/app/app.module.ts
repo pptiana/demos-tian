@@ -9,12 +9,15 @@ import { ThreeJsDemoComponent } from './three-js-demo/three-js-demo.component';
 import { WebssshComponent } from './webssh/websssh/websssh.component';
 import { ClocksComponent } from './clocks/clocks/clocks.component';
 import { SimpleClockComponent } from './clocks/muke/simple-clock/simple-clock.component';
+import { CountDownComponent } from './count-down/count-down.component';
+import { CronSelectComponent } from './cron-select/cron-select.component';
 export const ROUTES: Routes = [
   { path: '', component: DragComponent },
   { path: 'three', component: ThreeJsDemoComponent },
   { path: 'gooflow', component: DragComponent },
   { path: 'webssh', component: WebssshComponent },
-  { path: 'clock', component: ClocksComponent}
+  { path: 'clock', component: ClocksComponent },
+  { path: 'cron', component: CronSelectComponent}
 ];
 
 @NgModule({
@@ -24,7 +27,9 @@ export const ROUTES: Routes = [
     ThreeJsDemoComponent,
     WebssshComponent,
     ClocksComponent,
-    SimpleClockComponent
+    SimpleClockComponent,
+    CountDownComponent,
+    CronSelectComponent
   ],
   imports: [
     BrowserModule,
