@@ -1,0 +1,7 @@
+<div>
+  <app-demo-table [singleSelect]='singleSelect' [url]="url" [columns]="columns" (check)="checkRow($event)"
+  [sidePagination]="sidePagination" (dataUpdate)="recordAllData($event)"></app-demo-table>
+</div>
+<div>
+  <button (click)="save()">保存选中行数据</button>
+</div>

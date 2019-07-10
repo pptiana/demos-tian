@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClocksComponent implements OnInit {
   constructor() {
-    const c = new this.Clock();
-    c.run();
   }
 
   ngOnInit() {
+    const c = new this.Clock();
+    c.run();
   }
 
   Clock = function () {

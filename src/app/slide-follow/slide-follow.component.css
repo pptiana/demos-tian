@@ -1,0 +1,19 @@
+#scrollBox {
+  overflow: hidden;
+}
+
+#con1 {
+  margin-bottom: 50px;
+} 
+
+#scrollBox li {
+  margin: 10px 5px;
+}
+
+#scrollBox li:nth-of-type(odd) span {
+  color: #ffce55;
+}
+
+#scrollBox li:nth-of-type(even) span{
+  color: #43eec6;
+}

@@ -11,13 +11,18 @@ import { ClocksComponent } from './clocks/clocks/clocks.component';
 import { SimpleClockComponent } from './clocks/muke/simple-clock/simple-clock.component';
 import { CountDownComponent } from './count-down/count-down.component';
 import { CronSelectComponent } from './cron-select/cron-select.component';
+import { DemoTableComponent } from './bootstrap-table-page/demo-table/demo-table.component';
+import { TestComponent } from './bootstrap-table-page/test/test.component';
+import { SlideFollowComponent } from './slide-follow/slide-follow.component';
 export const ROUTES: Routes = [
   { path: '', component: DragComponent },
   { path: 'three', component: ThreeJsDemoComponent },
   { path: 'gooflow', component: DragComponent },
   { path: 'webssh', component: WebssshComponent },
   { path: 'clock', component: ClocksComponent },
-  { path: 'cron', component: CronSelectComponent}
+  { path: 'cron', component: CronSelectComponent },
+  { path: 'test', component: TestComponent },
+  { path: 'slide', component: SlideFollowComponent }
 ];
 
 @NgModule({
@@ -29,7 +34,10 @@ export const ROUTES: Routes = [
     ClocksComponent,
     SimpleClockComponent,
     CountDownComponent,
-    CronSelectComponent
+    CronSelectComponent,
+    DemoTableComponent,
+    TestComponent,
+    SlideFollowComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div id="scrollBox" (mouseover)="mouseOverFn()" (mouseout)="mouseOutFn()" [ngStyle]="{'width': slideWidth, 'height': slideHeight}">
+  <ul id="con1">
+    <li *ngFor="let item of slideData">
+      <i *ngIf="item.iconClass" class="{{item.iconClass}}"></i>
+      <span class="c-ml5">{{item.context}}</span>
+    </li>
+  </ul>
+  <ul id="con2">
+    <li *ngFor="let item of slideData">
+      <i *ngIf="item.iconClass" class="{{item.iconClass}}"></i>
+      <span class="c-ml5">{{item.context}}</span>
+    </li>
+  </ul>
+</div>
