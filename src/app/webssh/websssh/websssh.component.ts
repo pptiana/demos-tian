@@ -4,8 +4,7 @@ import { fit } from 'xterm/lib/addons/fit/fit';
 
 @Component({
   selector: 'app-websssh',
-  templateUrl: './websssh.component.html',
-  styleUrls: ['./websssh.component.css']
+  templateUrl: './websssh.component.html'
 })
 export class WebssshComponent implements OnInit {
 

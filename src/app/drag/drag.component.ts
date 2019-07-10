@@ -3,8 +3,7 @@ declare var $: any;
 
 @Component({
   selector: 'app-drag',
-  templateUrl: './drag.component.html',
-  styleUrls: ['./drag.component.css']
+  templateUrl: './drag.component.html'
 })
 export class DragComponent implements OnInit {
   /**property 属性说明
